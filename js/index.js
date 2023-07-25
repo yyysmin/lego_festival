@@ -1,0 +1,56 @@
+$(function(){
+    $("#fullpage").fullpage({
+        sectionsColor:["#a8a8a8","#ab0000","#0a0546","#fffce5","#460F02"],
+        slidesNavigation:true,
+        navigationTooltips:["page1","page2","page3","page4","page5"],
+        showActiveTooltip:true,
+        menu:"#menu",
+        anchors:["MAIN","TICKET","PROGRAM","MAP","MD"]
+    })
+
+    $(".md_slide").slick({
+        slidesToShow:4,
+        slidesToScroll:1,
+        autoplay:true,
+        autoplaySpeed:2000,
+        dots:false,
+        arrows:true,
+    })
+
+    $(".artist").hover(function(){
+        $(".art_txt").fadeIn();
+    },function(){
+        $(".art_txt").fadeOut();
+    })
+    $(".showing").hover(function(){
+        $(".showing_txt").fadeIn();
+    },function(){
+        $(".showing_txt").fadeOut();
+    })
+    $(".buying").hover(function(){
+        $(".buying_txt").fadeIn();
+    },function(){
+        $(".buying_txt").fadeOut();
+    })
+
+    $(".concert").hover(function(){
+        $(".concert_txt").stop().slideDown();
+    },function(){
+        $(".concert_txt").stop().slideUp();
+    })
+    $(".food").hover(function(){
+        $(".food_txt").stop().slideDown();
+    },function(){
+        $(".food_txt").stop().slideUp();
+    })
+    $(".show").hover(function(){
+        $(".show_txt").stop().slideDown();
+    },function(){
+        $(".show_txt").stop().slideUp();
+    })
+    $(".buy").hover(function(){
+        $(".buy_txt").stop().slideDown();
+    },function(){
+        $(".buy_txt").stop().slideUp();
+    })
+})

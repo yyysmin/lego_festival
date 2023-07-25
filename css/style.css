@@ -1,0 +1,425 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+body{
+    color: #333;
+    font-size: 14px;
+    font-family:'SUITE-Regular';
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #DB1F26;
+    text-align: center;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+}
+
+.logo{}
+
+#menu{
+    position: fixed;
+    background-color: #FFF5E1;
+    width: 100%;
+    height: 50px;
+    padding: 0 500px;
+    z-index: 10;
+    top: 100px;
+}
+#menu li{
+    float: left;
+    margin-right: 170px;
+}
+
+#menu li:last-child{
+    margin-right: 0 !important;
+}
+
+#menu li a{
+    line-height: 50px;
+    display: block;
+    font-weight: bold;
+}
+#menu li a:hover{
+    color: #DB1F26;
+}
+
+#section01{
+    background: url("../img/139562-_1080p__3.gif") no-repeat;
+}
+
+#section02{}
+.title{
+    font-size: 45px;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    color: white;
+}
+
+.main_video img{
+    width: 1920px;
+}
+
+.ticket_left{
+    position: absolute;
+    top: 60%;
+    left: 400px;
+    transform: translateY(-50%);
+}
+
+.ticket_left img{
+    width: 200px;
+}
+
+.ticket_right{
+    position: absolute;
+    top: 40%;
+    left: 950px;
+}
+
+.ticket_right img{
+    height: 50px;
+}
+
+.t_but_txt{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    position: absolute;
+    top: 67%;
+    left: 950px;
+}
+
+.ticket_buy{
+    position: absolute;
+    left: 950px;
+    top: 75%;
+}
+.ticket_buy select{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+}
+.t_buy_btn{
+    width: 150px;
+    height: 30px;
+}
+.ticket_img{
+    transition: all 0.3s;
+}
+
+.ticket_img:hover{
+    transform: rotate(-5deg);
+}
+
+#section03{}
+
+.artist{
+    width: 350px;
+    height: 500px;
+    background-image: url("../img/concert.jpg");
+    position: absolute;
+    top: 300px;
+    left: 400px;
+}
+.artist span{
+    background-color: #ca1e24;
+    color: white;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.artist p{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.showing{
+    width: 350px;
+    height: 500px;
+    background-image: url("../img/showing.jpg");
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.showing span{
+    background-color: #0a0546;
+    color: white;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.showing p{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.buying{
+    width: 350px;
+    height: 500px;
+    background-image: url("../img/buying.jpg");
+    position: absolute;
+    top: 300px;
+    right: 400px;
+}
+.buying span{
+    background-color: #FEDE00;
+    color: #0a0546;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.buying p{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.artist .art_txt{
+    background-color: rgba(0,0,0,.5);
+    width: 350px;
+    height: 500px;
+    display: none;
+}
+.showing .showing_txt{
+    background-color: rgba(0,0,0,.5);
+    width: 350px;
+    height: 500px;
+    display: none;
+}
+.buying .buying_txt{
+    background-color: rgba(0,0,0,.5);
+    width: 350px;
+    height: 500px;
+    display: none;
+}
+/* .artist:hover .art_txt,.showing:hover .showing_txt, .buying:hover .buying_txt{
+    display: block;
+    transition: all 0.3s;
+} */
+
+
+
+#section04{
+    position: relative;
+}
+#section04 .title{
+    color: #0a0546;
+}
+
+.map_pic{
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+}
+
+.map_pic img{
+    width: 500px;
+    height: 500px;
+}
+
+.concert{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.concert img{
+    width: 150px;
+    height: 150px;
+}
+.concert:hover{
+    transform: rotate(-10deg);
+}
+
+.food{
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.food img{
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.food:hover{
+    transform: rotate(10deg);
+}
+
+
+.show{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.show img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.show:hover{
+    transform: rotate(-10deg);
+}
+
+
+.buy{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    bottom:  0;
+    right: 0;
+}
+.buy img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    bottom:  0;
+    right: 0;
+}
+.buy:hover{
+    transform: rotate(10deg);
+}
+
+.map_txt{
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+
+}
+
+.map_txt div{}
+.map_txt div p{
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.map_txt div p strong{
+    font-size: 35px;
+}
+
+.concert_txt{
+    display: none;
+}
+.food_txt{
+    display: none;
+}
+.show_txt{
+    display: none;
+}
+.buy_txt{
+    display: none;
+}
+
+
+#section05 .title{
+    color: white;
+}
+
+.slide_box{
+    width: 1100px;
+    margin: 0 auto; 
+}
+
+.md_slide{
+    height: 250px;
+    position: relative;
+    margin-top: 150px;
+}
+
+.md_slide .slick-slide{
+    height: 250px;
+}
+.md_slide li{
+    width: 250px;
+}
+.md_slide li a{}
+
+.md_slide .slick-arrow{
+    width: 28px;
+    height: 27px;
+    background-color: transparent;
+    border: none;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.md_slide .slick-arrow.slick-prev{
+    left: calc(50% - 700px);
+    background-image: url("../img/arrow-left\ \(1\).png");
+    z-index: 10;
+}
+
+.md_slide .slick-arrow.slick-next{
+    right: calc(50% - 700px);
+    z-index: 10;
+    background-image: url("../img/arrow-right\ \(1\).png");
+}
+
+
